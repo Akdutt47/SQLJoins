@@ -1,9 +1,9 @@
 /* joins: select all the computers from the products table:
 using the products table and the categories table, return the product name and the category name */
-SELECT p.product_name, c.category_name
-FROM products p
-JOIN categories c ON p.category_id = c.category_id
-WHERE c.category_name = 'Computers';
+SELECT p.name, c.name
+FROM products as p
+JOIN categories as c ON p.categoryid = c.categoryid
+WHERE c.name = 'Computers';
 
 /* joins: find all product names, product prices, and products ratings that have a rating of 5 */
 SELECT product_name, price, rating
